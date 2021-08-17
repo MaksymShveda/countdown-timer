@@ -1,0 +1,29 @@
+@import "base/core.scss";
+
+
+* {
+    background-color: rgb(145, 139, 139);
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  
+  #timer {
+    display: flex; }
+  
+  #days, #hours, #minutes, #seconds, .colon {
+    font-family: $Iceland;
+    font-size: 150px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; }
+
+    h1{
+        font-size: 40px;
+        font-family: $OpenSans;
+        color: rgb(17, 17, 14);
+        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+    }
+
+

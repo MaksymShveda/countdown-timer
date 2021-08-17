@@ -6,7 +6,7 @@ let seconds = document.getElementById("seconds");
 let halfLifeThreeBirth = new Date(prompt("Guess, when Half-Life 3 will be announced?(write your answer this way: mm/dd/yyyy")).getTime();
 
 
-let timer = setTimeout(function countdown (){
+let timer = setInterval(function countdown (){
  let today = new Date().getTime();
  if(halfLifeThreeBirth-today<0){
      document.write("HAHAHAHAH, GORDON IS GOING TO SAVE OUR PLANET IN MIDDLE-AGES");
@@ -28,11 +28,10 @@ let timer = setTimeout(function countdown (){
  if (seconds.textContent<10){
      seconds.textContent = "0" +seconds.textContent;
  }
-timer = setTimeout(countdown, 1000);
 
 },1000)
 
 
 document.getElementById("stop").addEventListener("click", function(){
-   clearTimeout(timer)
+   clearInterval(timer)
 })
